@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Checkout Page Master</title>
+        <link rel="stylesheet" href="style.css">        
+        <script src="code.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </header>
+
+    <body>
+        <h1 class="checkout"> Checkout</h1>
+        <div class="cuerpo">
+            <div class="form_parent">
+
+                <div class="subtitle" > Contact informartion</div>
+
+                <div class="form_out">
+
+                    <div class="form">
+                        <div class="tema"> E-mail <span class="error" id="errorE"> Please check the entered E-mail! </span></div>
+                        <div class="recuadro">
+                            <div  class="material-symbols-outlined">mail</div>
+                            <input class="input_info" type="text" id="email" name="email" placeholder="Enter your email...">                        
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="tema">Phone <span class="error" id="errorP"> Please check the entered number! </span> </div>
+                        <div class="recuadro">
+                            <div  class="material-symbols-outlined">call</div>
+                            <input class="input_info" type="text" id="phone" name="phone" placeholder="Enter your phone...">                        
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subtitle" > Shipping address</div>
+
+                <div class="form_out">
+
+                    <div class="form">
+                        <div class="tema"> Full name <span class="error" id="errorF"> Please enter the information! </span></div>
+                        <div class="recuadro">
+                            <div  class="material-symbols-outlined">account_circle</div>
+                            <input class="input_info" type="text" id="name" name="name" placeholder="Your name..">
+                            
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="tema">Address <span class="error" id="errorA"> Please enter the information! </span> </div>
+                        <div class="recuadro">
+                            <div  class="material-symbols-outlined">home</div>
+                            <input class="input_info" type="text" id="address" name="address" placeholder="Your address..">                    
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="tema">City <span class="error" id="errorC"> Please enter the information! </span> </div>
+                        <div class="recuadro">
+                            <div  class="material-symbols-outlined">location_city</div>
+                            <input class="input_info" type="text" id="city" name="city" placeholder="Your city..">                            
+                        </div>
+                    </div>
+
+                    <div class="form_int">
+                        <div class="form">
+                            <div class="tema">Country</div>
+                            <div class="recuadro_grid">
+                                <div  class="material-symbols-outlined">public</div>
+                                <select class="input_info" id="country" name="country" >                                
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="tema"> Postal code <span class="error" id="errorPo"> Please enter the information! </span></div>
+                            <div class="recuadro_grid">
+                                <div  class="material-symbols-outlined">markunread_mailbox</div>
+                                <input class="input_info" type="text" id="postal" name="postal" placeholder="Your postal code..">                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <div class="save"> Save this informartion for next time</div>
+                    </div>
+
+                    <button class="butt_cont" id="butt_cont" onclick="butt_cont()">Continue</button>
+
+                </div>
+            </div>
+
+
+            <div class="cart">
+                <div class="item"> <!--va a ser unb grid de 2x2-->
+                    <img class="item_pic" src="photo1.png">
+                    <div class="item_info">
+                        <div class="item_name">Vintage Backbag</div>
+                        <div class="item_price">$54.99 <span class="item_price_og">$94.99</span></div>
+                    </div>
+                    <div class="item_selector">
+                        <button class="remove_but" id="remove_sup" onclick="remove_sup()">-</button>
+                        <div class="item_cant" id="cant_sup">1</div>
+                        <button class="add_but" id="add_sup" onclick="add_sup()">+</button>
+                    </div>
+                </div>
+
+                <div class="item"> <!--va a ser unb grid de 2x2-->
+                    <img class="item_pic" src="photo2.png">
+                    <div class="item_info">
+                        <div class="item_name">Levi Shoes</div>
+                        <div class="item_price" >$74.99 <span class="item_price_og">$124.99</span></div>
+                    </div>
+                    <div class="item_selector">
+                        <button class="remove_but" id="remove_inf" onclick="remove_inf()">-</button>
+                        <div class="item_cant" id="cant_inf">1</div>
+                        <button class="add_but" id="add_inf" onclick="add_inf()">+</button>
+                    </div>
+                </div>
+
+                <div class="space"></div>
+
+                <div class="container">
+                    <div class="text_name">Shipping</div>
+                    <div class="acum">$19</div>
+                </div>
+                <div class="container">
+                    <div class="text_name">Total</div>
+                    <div class="acum" >$<span id="acum">148.98</span></div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="info_pag" id="info_pag"> created by <span class="username"> N1kf3</span> - devChallenges.io </div>
+
+
+
+
+
+
+
+    </body>
+
+
+</html>
